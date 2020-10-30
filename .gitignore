@@ -1,4 +1,4 @@
 /venv
-.idea/
+/.idea
 instance/
 .pytest_cache/
