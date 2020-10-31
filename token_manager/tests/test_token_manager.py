@@ -1,5 +1,5 @@
 import pytest
-from token_menager.app.app_factory import create_app
+from token_manager.app.app_factory import create_app
 
 
 def test_factory_app():
