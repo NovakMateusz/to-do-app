@@ -1,4 +1,6 @@
 /venv
 /.idea
-instance/
-.pytest_cache/
+/instance
+.pytest_cache
+/sample_database
+app.db
