@@ -4,7 +4,7 @@ from token_manager.app.extensions import db
 from token_manager.blueprints.token.views import token_manager_blueprint
 
 
-def extensions(app):
+def extensions(app: Flask) -> None:
     """
     Register 0 or more extensions (mutates the app passed in).
     :param app: Flask application instance
@@ -12,7 +12,7 @@ def extensions(app):
     db.init_app(app)
 
 
-def create_app():
+def create_app() -> Flask:
     """
     Create a Flask app, using the application factory pattern.
     :return: Flask app
