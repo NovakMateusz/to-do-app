@@ -4,3 +4,4 @@
 .pytest_cache
 /sample_database
 app.db
+/token_manager/certs
