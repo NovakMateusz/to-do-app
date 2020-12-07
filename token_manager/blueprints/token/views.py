@@ -27,7 +27,7 @@ def token_manager():
                 'role': temp_user.role_id,
                 'exp': datetime.datetime.utcnow() + TOKEN_LIFESPAN
             }
-            token = jwt.encode(token_message, str(current_app.config['SECRET_KEY']))
+            token = jwt.encode(token_message, str(current_app.config['SECRET_KEY']), algorithm='HS256')
             response_body = {'token': token.decode('UTF-8'),
                              'exp': 15 * 60}
             return jsonify(response_body)
