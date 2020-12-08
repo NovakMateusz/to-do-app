@@ -1,2 +1,7 @@
 /venv
-.idea/
+/.idea
+/instance
+.pytest_cache
+/sample_database
+app.db
+/token_manager/certs
